@@ -8,3 +8,87 @@ color palette
 
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffd581;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 75px;
+}
+
+.logo-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-caption {
+    font-size: 18px;
+    font-family: 'Marker', Arial;
+    padding-left: 5px;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li a {
+    font-family: 'Marmelad', Arial;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 14px 18px;
+    margin: 5px 5px;
+    border-radius: 25px;
+    transition: 0.5s;
+    -webkit-transition: 1s;
+    display: inline-block;
+}
+
+.menu li a:hover {
+    background-color: #6927ff;
+    color: white;
+    cursor: pointer;
+}
+
+
+@font-face {
+    font-family: Marker;
+    src: url('Marker.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Marmelad;
+    src: url('Marmelad.ttf');
+    font-display: swap;
+}
