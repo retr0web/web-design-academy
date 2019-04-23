@@ -6,6 +6,10 @@ color palette
 #bf81ff - accent purple
 #ffd581 - main yellow
 
+
+some colors used during color experiment
+
+
 */
 
 * {
@@ -21,7 +25,7 @@ html, body {
     padding:0;
 }
 
-header {
+.top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +35,6 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
     height: 75px;
 }
 
@@ -80,45 +83,93 @@ header {
     cursor: pointer;
 }
 
+.mob-menu{
+    width: 100%;
+    height: 75px;
+    background-color: #5911ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.menu-logo {
+    margin-left: 15px;
+}
+
+.menu-icon {
+    color: white;
+    margin-right: 15px;
+}
+
+
 .intro {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     margin-top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #6927ff;
 }
 
 .banner {
     max-width: 700px;
-    height: 400px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    background-color: #ffd581;
     border-radius: 25px;
 }
 
 .banner-image {
-    max-width: 100%;
+    width: 200px;
+    max-width: 300px;
+    height: 200px;
 }
 
 .banner-h2 {
     text-align: center;
     font-size: 30px;
     font-family: 'Marker', Arial;
+    color: white;
 }
 
 .banner-p {
     text-align: center;
     font-size: 18px;
     font-size: 'Marmelad', Arial;
+    color: white;
 }
 
+
+.soon {
+    width: 100%;
+    padding: 30px;
+    color: white;
+    font-size: 18px;
+    font-size: 'Marmelad', Arial;
+    background-color: #6927ff;
+    text-align: center;
+    font-weight: 900;    
+}
+
+@media only screen and (max-width: 500px) {
+    .mob-menu {
+        z-index: 2;
+    }
+
+    .top-nav {
+        position: absolute;
+        z-index: -1;
+    }
+}
 
 @font-face {
     font-family: Marker;
