@@ -93,7 +93,6 @@ html, body {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: -1;
     visibility: hidden;
 }
 
@@ -163,13 +162,12 @@ html, body {
 
 @media only screen and (max-width: 500px) {
     .mob-menu {
-        z-index: 2;
         visibility: visible;
     }
 
     .top-nav {
         position: absolute;
-        z-index: -1;
+        visibility: hidden;
     }
 }
 
