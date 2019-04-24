@@ -94,6 +94,7 @@ html, body {
     left: 0;
     top: 0;
     z-index: -1;
+    visibility: hidden;
 }
 
 .menu-logo {
@@ -163,6 +164,7 @@ html, body {
 @media only screen and (max-width: 500px) {
     .mob-menu {
         z-index: 2;
+        visibility: visible;
     }
 
     .top-nav {
