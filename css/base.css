@@ -6,6 +6,10 @@
     background-color: #837dff;
 }
 
+.orange {
+    background-color: #ffa45c;
+}
+
 .yellow {
     background-color: #ffd581;
 }
@@ -22,6 +26,14 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.info-h1 {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Marmelad', Arial;
+    font-size: 20px;
 }
 
 .card {
