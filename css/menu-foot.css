@@ -105,6 +105,59 @@ html, body {
     margin-right: 15px;
 }
 
+.sidenav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #6927ff;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.8s;
+}
+
+.sidenav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Marmelad', Arial;
+    color: white;
+    transition: 0.5s;
+    opacity: 1;
+    border-radius: 25px;
+}
+
+.sidenav a:hover {
+    background-color: #ffd581;
+    color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    z-index: 6;
+    font-size: 40px;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
 
 .intro {
     width: 100%;
