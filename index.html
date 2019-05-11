@@ -13,6 +13,7 @@
     <meta name='theme-color' content='#083358' />
     <link rel='stylesheet' href='css/menu-foot.css' />
     <link rel='stylesheet' href='css/base.css' />
+    <link rel='stylesheet' href='css/tooltip.css' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marmelad|Permanent+Marker" rel="stylesheet">
@@ -68,7 +69,9 @@
             <img src='images/pen.svg' alt='adobe photoshop logo' class='card-image' />
             <h2 class='card-h2'>HTML</h2>
             <p class='card-text'>Стандартна мова розмітки веб-сторінки.
-            Ця мова є основою будь-якого сайту.
+            Ця мова є основою будь-якого сайту. Вона надає Вам змогу
+            вставляти на веб-сторінку посилання на інші сайти, зображення, відео
+            і багато іншого.
             </p>
           </div>
 
@@ -76,7 +79,9 @@
             <img src='images/pen.svg' alt='adobe photoshop logo' class='card-image' />
             <h2 class='card-h2'>CSS</h2>
             <p class='card-text'>Мова опису вигляду елементів HTML.
-            Використовуючи HTML та CSS можна створювати повноцінні сайти.
+            За допомогою неї можна визначити висоту, ширину, колір та
+            багато властивостей елемента. Також в курсі ми розглянемо 
+            анімацію, яке не потребує знань Javascript.
             </p>
           </div>
 
@@ -107,11 +112,10 @@
           <div class='card'>
             <img src='images/pen2.svg' alt='adobe photoshop logo' class='card-image' />
             <h2 class='card-h2 white-text'>Українська мова</h2>
-            <p class='card-text white-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Blanditiis ullam inventore, et nobis mollitia dolor nulla delectus rem expedita!
-            Nesciunt dolor repellendus atque! Dolorum atque aut asperiores earum necessitatibus
-            quisquam ducimus odio voluptatum quibusdam aperiam voluptatibus animi nesciunt beatae,
-            minus iusto enim vel placeat ea ex molestias? Adipisci, maiores vitae.
+            <p class='card-text white-text'> На цьому курсі в основному Ви будете
+            вивчати технології, але уроки будуть різноманітнені українськими словами,
+            які цікаво для вивчення. Ці слова будут виділені 
+            <button data-tippy-content="а тут пояснення слова" class='tooltip yellow'>ось так</button>.
             </p>
           </div>
 
@@ -158,5 +162,8 @@
         </footer>
 
     <script src='js/menu.js'></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script src='js/tooltip.js'></script>
     </body>
 </html>

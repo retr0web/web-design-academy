@@ -1,0 +1,32 @@
+.tooltip {
+    font-size: 16px;
+    font-family: 'Marmelad', Arial;
+    border-radius: 8px;
+    padding: 6px;
+    border: none;
+    z-index: 5;
+}
+
+.tippy-tooltip.yellow-theme {
+  background-color: #ffd581;
+  color: black;
+  font-size: 16px;
+  font-family: 'Marmelad', Arial;
+  z-index: 5;
+}
+
+.tippy-tooltip.yellow-theme[data-animatefill] {
+  background-color: transparent;
+  z-index: 5;
+}
+
+.tippy-tooltip.yellow-theme .tippy-backdrop {
+  background-color: #ffd581;
+  z-index: 5;
+}
+
+.tippy-tooltip.yellow-theme[x-placement^='top'] .tippy-arrow {
+  border-top-color: #ffd581;
+  transform: scale(1.5);
+  z-index: 5;
+}

@@ -6,10 +6,6 @@ color palette
 #bf81ff - accent purple
 #ffd581 - main yellow
 
-
-some colors used during color experiment
-
-
 */
 
 * {
@@ -25,6 +21,26 @@ html, body {
     padding:0;
 }
 
+.purple {
+    background-color: #6927ff;
+}
+
+.second-purple {
+    background-color: #837dff;
+}
+
+.orange {
+    background-color: #ffa45c;
+}
+
+.yellow {
+    background-color: #ffd581;
+}
+
+.white-text {
+    color: white;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -32,7 +48,7 @@ html, body {
     width: 100%;
     background-color: #ffd581;
     padding: 20px;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     height: 75px;
@@ -202,18 +218,6 @@ html, body {
     color: white;
 }
 
-
-.soon {
-    width: 100%;
-    padding: 30px;
-    color: white;
-    font-size: 18px;
-    font-size: 'Marmelad', Arial;
-    background-color: #6927ff;
-    text-align: center;
-    font-weight: 900;    
-}
-
 .main-foot {
     width: 100%;
     min-height: 400px;
@@ -264,7 +268,6 @@ html, body {
     }
 
     .top-nav {
-        position: absolute;
         z-index: -1;
     }
 }
