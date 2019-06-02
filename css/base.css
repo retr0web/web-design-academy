@@ -1,3 +1,4 @@
+/* home page */
 .info {
     width: 100%;
     min-height: 400px;
@@ -11,6 +12,16 @@
 .info-h1 {
     width: 100%;
     padding: 10px;
+    text-align: center;
+    font-family: 'Marmelad', Arial;
+    font-size: 20px;
+}
+
+.info-small {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 25px;
     text-align: center;
     font-family: 'Marmelad', Arial;
     font-size: 20px;
@@ -87,6 +98,69 @@
     word-wrap: break-word;
 }
 
+/* lessons page */
+
+.lesson {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.lesson-h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Marmelad', Arial;
+    color: black;
+    margin-top: 15px;
+}
+
+.lesson-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 5px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.lesson-item {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    background-color: #6927ff;
+    padding: 7px;
+    border-radius: 25px;
+}
+
+.lesson-item:hover {
+    cursor: pointer;
+}
+
+.lesson-img {
+    width: 40%;
+    height: 100%;
+    align-self: flex-start;
+}
+
+.lesson-h2 {
+    width: 60%;
+    height: 100%;
+    color: white;
+    font-family: 'Marmelad', Arial;
+    font-size: 20px;
+}
+
+
+
+/* media queries*/
 @media only screen and (max-width: 770px) {
     .card {
         width: 100%;
