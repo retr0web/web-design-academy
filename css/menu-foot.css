@@ -276,12 +276,11 @@ html, body {
 
 @media only screen and (max-width: 500px) {
     .mob-menu {
-        z-index: 2;
         visibility: visible;
     }
 
     .top-nav {
-        z-index: -1;
+        visibility: hidden;
     }
 }
 
