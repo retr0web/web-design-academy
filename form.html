@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='Description' 
+    content='Author: retr0web, type of site: Web Design Academy - академія
+    веб-дизайну українською' />
+    <meta charset='utf-8' />
+    <meta name='theme-color' content='#6927ff' />
+    <link rel='icon' sizes='192x192' href='images/logo.png' />
+    <meta name='viewport'
+    content='width=device-width, initial-scale=1.0, maximum-scale=5.0' />
+    <meta name='theme-color' content='#083358' />
+    <link rel='stylesheet' href='css/menu-foot.css' />
+    <link rel='stylesheet' href='css/form.css' />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link 
+    href="https://fonts.googleapis.com/css?family=Marmelad|Permanent+Marker"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header class='top-nav'>
+        <div class='logo-block'>
+            <img src='images/logo.png' alt='logo' class='logo' />
+            <div class='logo-caption'>Web Design Academy</div>
+        </div>
+    
+        <nav>
+          <ul class='menu'>
+            <li><a href='index.html'>Головна</a></li>
+            <li><a href='lessons.html'>Уроки</a></li>
+          </ul>
+        </nav>
+    </header>
+          <!-- Mob menu -->
+    <div class='mob-menu'>
+        <img src='images/logo.png' alt='logo' class='logo menu-logo' />
+        <i class='material-icons menu-icon' id='openMenu'>menu</i>
+    </div>
+          <!-- End mob menu -->
+    
+    <div class='sidenav' id='sideOver'>
+      <span class='closebtn' id='closeMenu'>
+        <i class='material-icons'>close</i>
+      </span>
+    
+      <a href='index.html'>Головна</a>
+      <a href='lessons.html'>Уроки</a>
+    </div>
+
+    <section class='form-sec'>
+     <div class='form-container purple'>
+      <h2 class='form-h2'>Є запитання? Звертайтесь!</h2>
+      <form action='' method='get' class='form-block'>
+
+       <label for='name' class='form-label'>Ім'я</label>
+       <input
+        type='text'
+        id='name'
+        name='Name'
+        class='form-input' />
+        
+       <label for='email' class='form-label'>Пошта</label>
+       <input
+        type='email'
+        id='email'
+        name='Email'
+        class='form-input' />
+        
+       <label for='question' class='form-label'>Ваше питання</label>
+       <textarea id='question' name='question' class='form-area'></textarea>
+
+       <button id='submit'>Надіслати</button>
+      </form>
+     </div>
+    </section>
+
+<script src='js/menu.js'></script>
+<script src='js/form.js'></script>
+</body>
